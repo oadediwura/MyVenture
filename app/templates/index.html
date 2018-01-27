@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<title></title>
+{% block content %}
+    <head></head>
+    <h1>Hi, {{ user.nickname }}!</h1>
+    {% for post in posts %}
+    <div><p>{{ post.author.nickname }} says: <b>{{ post.body }}</b></p></div>
+    {% endfor %}
+{% endblock %}
+</html>
